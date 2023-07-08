@@ -1,4 +1,6 @@
+
 # I.Thanh ghi:
+ ```
   A. Thanh ghi đa năng:
     - Thanh ghi dữ liệu
     - Thanh ghi con trỏ
@@ -13,7 +15,7 @@
             - EBX( thanh ghi cơ sở): Thường được dùng để đánh dấu địa chỉ, lưu địa chỉ bắt đầu của 1 mảng
             - ECX( thanh ghi đếm):  Thường được dùng trong vòng lặp, đếm số lần lặp. Hoặc có thể sử dụng để lưu biến
             - EDX( thanh ghi dữ liệu): Được sử dụng trong đầu ra để lưu trữ các giá trị trung gian và kết quả của các phép toán số học
-    2. Thanh ghi con trỏ ( Pointer registers):
+   2. Thanh ghi con trỏ ( Pointer registers):
           Thanh ghi 32 bit: EIP, ESP, EBP
           Thanh ghi 16 bit: IP, SP, BP 
             - IP(Instruction Pointer) IP kết hợp với thanh ghi CS (dưới dạng CS:IP) được sử dụng để lưu trữ địa chỉ của lệnh tiếp theo được thực thi trong chương trình
@@ -47,7 +49,9 @@ VD: giá trị 0000 1101 sau khi dịch phải 1 bit sẽ trở thành 0000 0110
             - Data segment: chứa các biến, hằng số, dữ liệu của chương trình. Thanh ghi đoạn dữ liệu DS chứa địa chỉ bắt đầu của Data segment.
             - Stack segment: chứa dữ liệu và địa chỉ trả về của các chương trình con. Các dữ liệu này được lưu trữ theo cấu trúc Stack. Thanh ghi đoạn stack SS chứa địa chỉ bắt đầu của Stack segment.
     * Ngoài CS, DS và SS ra còn có các thanh ghi đoạn ES (Extra Segment Register), FS và GS cung cấp các phân đoạn bổ sung cho việc lưu trữ dữ liệu.
+```
 # II. Cấu trúc chung chương trình assembly ( NASM):
+```
   Chương trình có 3 phần: data, bss, text
   ```
 section .data ; khai báo dữ liệu khởi tạo, hằng
@@ -59,10 +63,14 @@ section .text ; bắt đầu chương trình, khai báo biến toàn cục, th�
   _start :    ; để kernel biết đầu chương trình
     {}
 ```
+```
 ![image](https://github.com/haridt/Code-C/assets/131541155/db1e94e8-416a-4b77-85c9-dc3b7f680610)
 # III. Lời gọi của hệ thống Linux:
+
 ![image](https://github.com/haridt/Code-C/assets/131541155/34b5058b-b6c6-4827-8f2a-09bbe7da7d0f)
-``` hiển thị màn hình : + eax: 4
+```
+```
+hiển thị màn hình : + eax: 4
                       + ebx: 1
   nhập từ bàn phím :  + eax: 3
                       + ebx: 2
@@ -70,18 +78,25 @@ section .text ; bắt đầu chương trình, khai báo biến toàn cục, th�
                       + ebx: 0
                       + int 80h
 ```
+```
 # IV. Đặc tả ( kiểu dữ liệu):
+
 `` đặc tả thuộc `section .data` ``
+
 ![image](https://github.com/haridt/Code-C/assets/131541155/58a11a13-9077-4a96-a599-fe65f23fbc9a)
 
 `` đặc tả thuộc `section .bss` ``
+
 ![image](https://github.com/haridt/Code-C/assets/131541155/1aa5d09d-168c-450a-9b2e-e0f07280894c)
 
 
 # V. Điều kiện:
 ![image](https://github.com/haridt/Code-C/assets/131541155/7e5d777f-8a99-4f6e-a232-ae4a577befae)
 
+
+
 ![image](https://github.com/haridt/Code-C/assets/131541155/24082942-55fd-4697-8ee7-813b4f658d1e)
+
 
 
                                                               (source: https://www.cit.ctu.edu.vn/~dtnghi/cod/nasm.pdf)
