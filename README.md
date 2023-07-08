@@ -69,7 +69,7 @@ section .text ; bắt đầu chương trình, khai báo biến toàn cục, th�
 # III. Lời gọi của hệ thống Linux:
 
 ![image](https://github.com/haridt/Code-C/assets/131541155/34b5058b-b6c6-4827-8f2a-09bbe7da7d0f)
-```
+
 ```
 hiển thị màn hình : + eax: 4
                       + ebx: 1
@@ -79,7 +79,7 @@ hiển thị màn hình : + eax: 4
                       + ebx: 0
                       + int 80h
 ```
-```
+
 # IV. Đặc tả ( kiểu dữ liệu):
 
 `` đặc tả thuộc `section .data` ``
