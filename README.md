@@ -53,7 +53,8 @@ VD: giá trị 0000 1101 sau khi dịch phải 1 bit sẽ trở thành 0000 0110
 # II. Cấu trúc chung chương trình assembly ( NASM):
 ```
   Chương trình có 3 phần: data, bss, text
-  ```
+
+``
 section .data ; khai báo dữ liệu khởi tạo, hằng
   {}
 section .bss  ; khai báo biến chưa khởi tạo hoặc biến mặc định cho chương trình
@@ -62,7 +63,8 @@ section .text ; bắt đầu chương trình, khai báo biến toàn cục, th�
   global _start
   _start :    ; để kernel biết đầu chương trình
     {}
-```
+``
+
 ```
 ![image](https://github.com/haridt/Code-C/assets/131541155/db1e94e8-416a-4b77-85c9-dc3b7f680610)
 # III. Lời gọi của hệ thống Linux:
