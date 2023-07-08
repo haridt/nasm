@@ -98,6 +98,30 @@ hiển thị màn hình : + eax: 4
 
 ![image](https://github.com/haridt/Code-C/assets/131541155/24082942-55fd-4697-8ee7-813b4f658d1e)
 
+# VI. Một số lệnh cơ bản:
+
+section .data
+```
+biến2 db " soạn_thảo" ; khai báo biến2 
+biến1 equ $- biến2   ; biến2 có độ dài bao nhiêu sẽ lưu vào biến1 và đó là tác dụng của equ $-
+```
+
+section .text
+```
+- mov edx,s1          ; tác dụng gán biến s1 vào thanh ghi
+- add eax, 12345      ; tác dụng cộng 12345 với thanh ghi eax và lưu kết quả trong thanh ghi đó
+- sub eax, 12345      ; tác dụng trừ 12345 với thanh ghi và lưu kết quả trong thanh ghi eax
+- mul/imul eax, 12345 ;
+- div eax, 12345      ;
+- and eax,ebx         ; các thanh ghi này sẽ chứa giá trị nhị phân( phiên dịch theo trong máy), lệnh thực hiện nếu 0~1=0, 1~1=1, 0~0=0
+- or eax, ebx         ; lệnh thực hiện nếu 1~0=1, 1~1=1, 0~0=0
+- xor eax,ebx         ; 1~1=0, 0~0=1, 1~0=1
+- còn Nhân ,chia làm biếng nghiên cứu quá, nào rảnh update nhé :))
+```
+```
+
+
+
 
 
                                                               (source: https://www.cit.ctu.edu.vn/~dtnghi/cod/nasm.pdf)
